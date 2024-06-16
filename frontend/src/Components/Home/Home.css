@@ -1,7 +1,7 @@
 /* src/Home.css */
 
 .hero {
-    position: relative;
+    /* position: relative; */
     /*background: url('/slide1.jpg') no-repeat center center/cover;*/
     color: white;
     text-align: center;
@@ -60,43 +60,3 @@
     background-color: #e64a19;
 }
 
-.services {
-    background-color: #f4f4f4;
-    padding: 2rem 1rem;
-}
-
-.services .container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.service-cards {
-    display: flex;
-    gap: 2rem;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.card {
-    background-color: white;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 30%;
-    flex: 1;
-}
-
-.card h3 {
-    margin-top: 0;
-}
-
-@media (max-width: 768px) {
-    .service-cards {
-        flex-direction: column;
-    }
-
-    .card {
-        max-width: 100%;
-        margin-bottom: 1rem;
-    }
-}

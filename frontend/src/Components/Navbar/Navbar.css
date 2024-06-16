@@ -45,8 +45,12 @@
     border-radius: 5px;
 }
 
-.navbar nav ul li a:hover,
-.navbar nav ul li a.active {
-    background-color: #1abc9c;
-    color: white;
-}
+.navbar nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  .navbar nav ul li a.active {
+    background-color: #007bff;
+    border-radius: 5px;
+  }
