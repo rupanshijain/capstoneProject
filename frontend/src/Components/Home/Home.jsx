@@ -38,7 +38,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="services" id="services">
+      {/* <section className="services" id="services">
         <div className="container">
           <h2>Our Services</h2>
           <div className="service-cards">
@@ -56,7 +56,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 };
