@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/Home/Home';
 import Services from './Components/Services/Services';
-import Footer from './Components/Footer/Footer';
 import AdminLogin from './Components/AdminLogin/AdminLogin';
 import AdminDashboard from './Components/AdminDashboard/AdminDashboard';
 import About from './Components/About/About';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
           <Route path="/about" element={<About />} />
           {/* <Route path="/contact" element={<Contact />} /> */}
           <Route path="/admin" element={<AdminLogin />} />
-          <Route path="/admin/dashboard" element={<AdminDashboard />}  />
+          <Route path="/admin/dashboard" element={<AdminDashboard />} />
         </Routes>
         <Footer />
       </div>
