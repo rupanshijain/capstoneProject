@@ -9,10 +9,11 @@ const Navbar = () => {
         <h1>Pinewood Construction Co.</h1>
         <nav>
           <ul>
-            <li><NavLink exact to="/" activeClassName="active">Home</NavLink></li>
-            <li><NavLink to="/services" activeClassName="active">Services</NavLink></li>
-            <li><NavLink to="/about" activeClassName="active">About</NavLink></li>
-            <li><NavLink to="/contact" activeClassName="active">Contact</NavLink></li>
+            <li><NavLink exact="true" to="/" activeclassname="active">Home</NavLink></li>
+            <li><NavLink to="/services" activeclassname="active">Services</NavLink></li>
+            <li><NavLink to="/about" activeclassname="active">About</NavLink></li>
+            <li><NavLink to="/contact" activeclassname="active">Contact</NavLink></li>
+            <li><NavLink to="/admin" activeclassname="active">Admin</NavLink></li>
           </ul>
         </nav>
       </div>

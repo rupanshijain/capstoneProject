@@ -1,22 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Services.css';
 
-const services = [
-  {
-    title: 'Driveways',
-    description: 'Durable and aesthetically pleasing driveways that enhance the curb appeal of your home, made with the highest quality materials.'
-  },
-  {
-    title: 'Patios',
-    description: 'Beautifully designed patios that create the perfect outdoor space for relaxation and entertainment, tailored to fit your lifestyle.'
-  },
-  {
-    title: 'Walkouts',
-    description: 'Seamless and stylish walkouts that blend with your home’s architecture, providing easy access to your outdoor areas.'
-  }
-];
-
 const Services = () => {
+  const [services, setServices] = useState([]);
+
+  useEffect(() => {
+    const fetchServices = async () => {
+      try {
+        const response = await fetch('http://localhost:5000/services');
+        const data = await response.json();
+        setServices(data);
+      } catch (error) {
+        console.error('Error fetching services:', error);
+      }
+    };
+
+    fetchServices();
+  }, []);
+
   return (
     <section className="services" id="services">
       <div className="container">

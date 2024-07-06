@@ -1,0 +1,14 @@
+.admin-dashboard {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .admin-dashboard h2 {
+    margin-bottom: 20px;
+  }
+  
+  .admin-dashboard p {
+    margin-bottom: 10px;
+  }
+  
