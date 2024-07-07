@@ -1,27 +1,27 @@
 
 .services {
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
 }
 
 .services .container {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
 }
 
 .service-cards {
     display: flex;
     gap: 2rem;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     flex-wrap: wrap;
 }
 
 .card {
     background-color: #f4f4f4;
-    padding: 1rem;
+    padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 30%;
-    flex: 1;
+    /* flex: 1; */
 }
 
 .card h3 {
