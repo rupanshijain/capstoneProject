@@ -28,4 +28,35 @@ router.post('/add', async (req, res) => {
   }
 });
 
+router.put('/:id', async (req, res) => {
+  try {
+    const service = await Service.findById(req.params.id);
+    if (!service) {
+      return res.status(404).json('Service not found');
+    }
+
+    service.title = req.body.title;
+    service.description = req.body.description;
+
+    await service.save();
+    res.json('Service updated!');
+  } catch (err) {
+    res.status(400).json('Error: ' + err);
+  }
+});
+
+router.delete('/:id', async (req, res) => {
+  try {
+    const service = await Service.findById(req.params.id);
+    if (!service) {
+      return res.status(404).json('Service not found');
+    }
+
+    await service.deleteOne();
+    res.json('Service deleted!');
+  } catch (err) {
+    res.status(400).json('Error: ' + err);
+  }
+});
+
 module.exports = router;

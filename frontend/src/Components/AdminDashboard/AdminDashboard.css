@@ -1,14 +1,148 @@
 .admin-dashboard {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.admin-dashboard h2,
+.admin-dashboard h3 {
+  text-align: center;
+}
+
+.service-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 20px;
+}
+
+.service-list,
+.add-service {
+  width: 45%;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.service-list li {
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.service-list li.editing {
+  background-color: #e6f7ff;
+  border-left: 4px solid #1890ff;
+}
+
+.service-list li div {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-list li .buttonList {
+  display: flex;
+}
+
+.service-list li .buttonList button {
+  margin-left: 10px;
+}
+
+.service-list li.editing input {
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+}
+
+.service-list li.editing .save-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.service-list li.editing .save-button:hover {
+  background-color: #0056b3;
+}
+
+.service-list li.editing .cancel-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.service-list li.editing .cancel-button:hover {
+  background-color: #c82333;
+}
+
+.add-service input {
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-service button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-service button:hover {
+  background-color: #218838;
+}
+
+.service-list .edit-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.service-list .delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttonList{
+  flex-direction: row !important;
+}
+.add-service{
+  height: fit-content;
+}
+.service-list{
+  max-height: 400px;
+  overflow-y: auto;
   
-  .admin-dashboard h2 {
-    margin-bottom: 20px;
-  }
-  
-  .admin-dashboard p {
-    margin-bottom: 10px;
-  }
-  
+}
