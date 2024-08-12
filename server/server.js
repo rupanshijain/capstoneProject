@@ -21,11 +21,13 @@ mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
 // Routes
 const servicesRouter = require('./routes/services');
 const loginRouter = require('./routes/login');
-const adminUserRouter = require('./routes/user')
+const adminUserRouter = require('./routes/user');
+const contactRouter = require('./routes/contact');
 
 app.use('/services', servicesRouter);
 app.use('/login', loginRouter);
 app.use('/user', adminUserRouter);
+app.use('/contact', contactRouter);
 
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);

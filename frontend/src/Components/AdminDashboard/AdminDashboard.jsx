@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './AdminDashboard.css';
 
 const AdminDashboard = () => {
@@ -6,6 +7,7 @@ const AdminDashboard = () => {
   const [services, setServices] = useState([]);
   const [newService, setNewService] = useState({ title: '', description: '' });
   const [editingService, setEditingService] = useState(null);
+  const navigate = useNavigate();
 
   const fetchServices = async () => {
     try {
@@ -112,7 +114,15 @@ const AdminDashboard = () => {
 
   return (
     <div className="admin-dashboard">
-      <h2>Admin Dashboard</h2>
+      <button
+          className="queries-button"
+          onClick={() => navigate('/admin/queries')} 
+        >
+          Queries
+        </button>
+      <div className="dashboard-header">
+        <h2>Admin Dashboard</h2>
+      </div>
       {userData ? (
         <div>
           <p>Welcome, {userData.username}</p>

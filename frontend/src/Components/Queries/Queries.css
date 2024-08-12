@@ -1,0 +1,14 @@
+.queries{
+    padding: 40px;
+}
+.back-button {
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 5px; 
+    padding: 10px 20px;
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    margin-left: 90%;
+  }

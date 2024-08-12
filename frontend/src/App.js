@@ -8,8 +8,8 @@ import AdminDashboard from './Components/AdminDashboard/AdminDashboard';
 import About from './Components/About/About';
 import Footer from './Components/Footer/Footer';
 import Contact from './Components/Contact/Contact';
+import Queries from './Components/Queries/Queries';
 import './App.css';
-
 
 function App() {
   return (
@@ -24,6 +24,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/admin" element={<AdminLogin />} />
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
+          <Route path="/admin/queries" element={<Queries />} />
         </Routes>
         </main>
         <Footer />
